@@ -74,7 +74,7 @@ const Beranda = (props) => {
                 <div className="row-fluid">
                   <div className="span7">
                     <h3>
-                      Selamat Datang di Sistem Penyaluran Dana Santunan Kematian
+                      Selamat Datang di Sistem Penyaluran Dana Santunan Kematian dan Dana Bantuan
                     </h3>
                     <span>
                       "Melalui sistem ini Anda dapat melihat status perkembangan

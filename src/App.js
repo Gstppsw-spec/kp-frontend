@@ -19,6 +19,8 @@ import DaftarBantuanHasil from "./halamanBantuan/DaftarBantuanHasil";
 import TambahBantuan from "./halamanBantuan/TambahBantuan"
 import UpdateBantuan from "./halamanBantuan/UpdateBantuan"
 import HasilBantuan from "./halaman/HasilBantuan"
+import GenerateBantuanHasil from './halamanBantuan/GenerateBantuanHasil'
+import GenerateKematianHasil from './halaman/GenerateKematianHasil'
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -33,6 +35,8 @@ function App() {
           <Route exact path="/hasilBantuan/:kata" element={<HasilBantuan/>}/>
           <Route exact path="/dashboard" element={<Home />} />
           <Route exact path="/user" element={<User/>}/>
+          <Route exact path="/generate" element={<GenerateBantuanHasil/>}/>
+          <Route exact path="/generate-kematian" element={<GenerateKematianHasil/>}/>
           <Route exact path="/bantuan">
             <Route index element={<DaftarBantuanHasil/>}/>
             <Route path="bantuan/baru" element={<TambahBantuan/>}/>

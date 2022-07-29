@@ -105,7 +105,7 @@ function Navbar() {
     // });
   };
   return (
-    <div className="sidebar">
+    <div className="sidebar" style={{color: 'white'}}>
       <div className="top">
         <Link to="/dashboard" style={{ textDecoration: "none" }}>
           <img
@@ -114,21 +114,27 @@ function Navbar() {
           />
         </Link>
       </div>
-      <div className="center">
+      <div className="center" style={{color: 'white'}}>
         <ul>
-          <p className="title">MENU UTAMA</p>
+          <p className="title" style={{color: 'white'}}>MENU UTAMA</p>
           <Link to="/dashboard" style={{ textDecoration: "none" }}>
             <li>
               <DashboardIcon className="icon" />
-              <span>Dashboard</span>
+              <span style={{color: 'white'}}>Dashboard</span>
             </li>
           </Link>
 
-          <p className="title">KEMATIAN</p>
+          <p className="title" style={{color: 'white'}}>KEMATIAN</p>
           <Link to="/kematian" style={{ textDecoration: "none" }}>
             <li>
               <FolderIcon className="icon" />
-              <span>Data Pengambilan</span>
+              <span style={{color: 'white'}}>Data Pengambilan</span>
+            </li>
+          </Link>
+          <Link to="/generate-kematian" style={{ textDecoration: "none" }}>
+            <li>
+              <FolderIcon className="icon" />
+              <span style={{color: 'white'}}>Generate Data</span>
             </li>
           </Link>
 
@@ -136,18 +142,22 @@ function Navbar() {
             <FindInPageIcon className="icon" />
             <span>Cari NIK</span>
           </li> */}
-          <p className="title">BANTUAN</p>
-          <Link to='/bantuan' style={{ textDecoration: "none"}}>
+          <p className="title" style={{color: 'white'}}>BANTUAN</p>
+          <Link to="/bantuan" style={{ textDecoration: "none" }}>
             <li>
               <FolderIcon className="icon" />
-              <span>Data Pengambilan</span>
+              <span style={{color: 'white'}}>Data Pengambilan</span>
             </li>
           </Link>
-          {/* <li>
-            <FindInPageIcon className="icon" />
-            <span>Cari NIK</span>
-          </li> */}
-          <p className="title">PENGGUNA</p>
+          <Link to="/generate" style={{ textDecoration: "none" }}>
+            <li>
+              <FolderIcon className="icon" />
+              <span style={{color: 'white'}}>Generate Data</span>
+            </li>
+          </Link>
+        
+
+          <p className="title" style={{color: 'white'}}>PENGGUNA</p>
           {/* <Link to="/user" style={{ textDecoration: "none" }} >
             <li>
             <PersonOutlineIcon className="icon" />
@@ -157,7 +167,7 @@ function Navbar() {
 
           <li onClick={logoutHanlder}>
             <ExitToAppIcon className="icon" />
-            <span>Logout</span>
+            <span style={{color: 'white'}}>Logout</span>
           </li>
         </ul>
       </div>
